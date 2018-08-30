@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <meta name="theme-color" content="#fff">
+    <link rel="stylesheet" href="./css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="manifest" href="./manifest.json">
+
+</head>
+
+<body>
+
+    <div id="form">
+        <input id="input" type="text" placeholder="Choose a city" autocomplete="off" onfocus="this.placeholder = ''">
+        <button id="button">GO</button>
+
+    </div>
+
+    <div class="data">
+        <img id="img">
+        <div id="temp"></div>
+        <div id="weather"></div>
+        <div id="city"></div>
+        <div id="days"></div>
+    </div>
+
+    <script src="./js/weather.js"></script>
+    <script src="service-worker.js"></script>
+
+    <script>
+        // let installPromptEvent;
+
+        // window.addEventListener('beforeinstallprompt', (event) => {
+        //     // Prevent Chrome <= 67 from automatically showing the prompt
+        //     event.preventDefault();
+        //     // Stash the event so it can be triggered later.
+        //     installPromptEvent = event;
+        //     prompt()
+        //     document.querySelector('#install-button').disabled = false;
+        // });
+
+       
+    </script>
+</body>
+
+</html>
